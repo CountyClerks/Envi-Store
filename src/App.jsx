@@ -1,11 +1,20 @@
+import Home from "./components/Home";
+import Artwork from "./components/Artwork";
+import Artists from "./components/Artists";
+import Header from "./components/Header";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function App() {
 
-  // const fakeData = fetch("https://fakestoreapi.com/products/").then(res => res.json()).then(json => console.log(json)) 20 PRODUCTS IN TOTAL
-
   return (
-    <div className="App">
-
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/artwork" element={<Artwork />} />
+        <Route path="/artists" element={<Artists />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

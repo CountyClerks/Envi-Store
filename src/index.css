@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  padding-top: 10px;
+  align-items: center;
+}
+
+header > img {
+  height: 34px;
+}
+
+ul {
+  display: flex;
+  column-gap: 20px;
+  font-size: 1rem;
+  list-style: none;
+}
