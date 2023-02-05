@@ -4,23 +4,39 @@
 
 body {
   margin: 0;
+  font-family: Karla, sans-serif;
 }
 
 header {
   display: flex;
   justify-content: space-around;
   font-size: 1rem;
-  padding-top: 10px;
+  padding-top: 20px;
   align-items: center;
 }
 
-header > img {
-  height: 34px;
+.cart-button {
+  height: 38px;
+  width: 38px;
+  background-image: url(/cart-medium.png);
+  background-size: 100%;
+  border-radius: 5px;
+  background-color: white;
+  border: none;
 }
 
 ul {
   display: flex;
-  column-gap: 20px;
+  column-gap: 30px;
   font-size: 1rem;
   list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+  height: stretch;
+}
+
+a:visited {
+  color: black;
 }

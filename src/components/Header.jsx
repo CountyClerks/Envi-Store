@@ -14,7 +14,7 @@ export default function Navbar() {
                     </li>
                 </ul>
             </nav>
-            <img src="../cart-medium.png" alt="" />
+            <button type="button" className="cart-button"></button>
         </header>
     )
 }
