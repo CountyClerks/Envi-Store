@@ -27,7 +27,7 @@ export default function Home() {
                     </div>
                 </div>
             </main>
-            <Footer />
+            <Footer art={art}/>
         </div>
     )
 }
