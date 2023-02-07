@@ -6,14 +6,14 @@ export default function Home(props) {
 
     const featuredArt = props.art.map((art, index) => {
         return (
-            <Link to="/artwork">
-                <div className="home-card" key={index}>
-                <img src={art.image} alt="" />
-                <div className="art-info">
+            <Link to="/artwork" key={index}>
+                <div className="home-card" >
+                    <img src={art.image} alt="" className="art-image"/>
+                    <div className="art-info">
                         <h1 className="art-title">{art.name}</h1>
                         <h2 className="art-artist">{art.artist}</h2>
                         <p className="art-medium">{art.medium}</p>
-                </div>
+                    </div>
                 </div>
             </Link>
         )
