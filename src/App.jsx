@@ -2,6 +2,7 @@ import Home from "./components/Home";
 import Artwork from "./components/Artwork";
 import Artists from "./components/Artists";
 import Header from "./components/Header";
+import art from "./Art";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home art={art}/>} />
         <Route path="/artwork" element={<Artwork />} />
         <Route path="/artists" element={<Artists />} />
       </Routes>

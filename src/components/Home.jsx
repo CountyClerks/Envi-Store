@@ -1,7 +1,24 @@
 import art from "../Art";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function Home(props) {
+
+    const featuredArt = props.art.map((art, index) => {
+        return (
+            <Link to="/artwork">
+                <div className="home-card" key={index}>
+                <img src={art.image} alt="" />
+                <div className="art-info">
+                        <h1 className="art-title">{art.name}</h1>
+                        <h2 className="art-artist">{art.artist}</h2>
+                        <p className="art-medium">{art.medium}</p>
+                </div>
+                </div>
+            </Link>
+        )
+    })
+
     return (
         <div className="container">
             <main>
@@ -10,24 +27,12 @@ export default function Home() {
                     <button type="button" className="main-art-button" ></button>
                 </div>
                 <div className="home-artwork">
-                    <div className="home-card">
-                        <img src={art[0].image} alt="" />
-                    </div>
-                    <div className="home-card">
-                        <img src={art[1].image} alt="" />
-                    </div>
-                    <div className="home-card">
-                        <img src={art[2].image} alt="" />
-                    </div>
-                    <div className="home-card">
-                        <img src={art[3].image} alt="" />
-                    </div>
-                    <div className="home-card">
-                        <img src={art[4].image} alt="" />
-                    </div>
+                    {featuredArt}
                 </div>
             </main>
-            <Footer art={art}/>
+            <Link to="/artists">
+                <Footer art={art}/>
+            </Link>
         </div>
     )
 }

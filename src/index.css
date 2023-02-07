@@ -14,7 +14,7 @@ body {
 .container {
   display: flex;
   flex-flow: column nowrap;
-  min-height: calc(100vh - 70.6px);
+  min-height: calc(100vh - 82.51px);
 }
 
 header {
@@ -25,12 +25,13 @@ header {
 }
 
 main {
-  flex-grow: 1;
+  max-height: 560px;
+  margin-bottom: auto;
 }
 
 footer {
-  background-color: #d8d8d8;
-  height: 200px;
+  background-color: #F4F4F2; 
+  height: 175px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
@@ -51,8 +52,12 @@ footer {
 ul {
   display: flex;
   column-gap: 30px;
-  font-size: 1rem;
+  font-size: 1.25rem;
   list-style: none;
+}
+
+.header-title {
+  font-size: 1.25rem;
 }
 
 a:link {
@@ -66,13 +71,15 @@ a:visited {
 
 .home-main {
   display: flex;
-  margin-top: 4em;
+  margin-top: 30px;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 25px;
 }
 
 .home-title {
   font-weight: 400;
+  font-size: 38px;
 }
 
 .main-art-button { 
@@ -88,20 +95,30 @@ a:visited {
 
 .home-artwork {
   display: flex;
-  column-gap: 40px;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 35px;
+  margin-top: 6%;
 }
 
-.home-card > img {
+.home-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+  height: 343px;
   width: 232px;
-  height: 200px;
+  box-sizing: border-box;
 }
 
-.art-ornamental {
-  width: 232px;
-  height: 264px;
+.home-card:hover {
+  z-index: 2;
+  padding: 35px;
+  transform: scale(1.55);
+  background: #FFFFFF;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
 }
 
 .footer-title > h1 {
@@ -126,16 +143,41 @@ a:visited {
   justify-content: center;
   align-items: center;
   background-color: white;
-  border: 1px solid grey;
+  border: 1px solid #d8d8d8;
   border-radius: 1px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .footer-card > h1 {
-  height: 24px;
+  height: 22px;
   font-family: 'Optima LT Std';
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 24px;
+}
+
+.art-title {
+  font-family: 'Optima LT Std';
+  font-size: 18px;
+  color: #161412;
+  margin: 0;
+  text-indent: 3px;
+}
+
+.art-artist {
+  font-family: 'Optima LT Std';
+  font-size: 14px;
+  color: #65635F;
+  margin: 0;
+  text-indent: 3px;
+}
+
+.art-medium {
+  font-family: 'Optima LT Std';
+  font-size: 14px;
+  color: #65635F;
+  font-style: italic;
+  margin: 0;
+  text-indent: 3px;
 }
