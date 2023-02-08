@@ -6,16 +6,18 @@ export default function Home(props) {
 
     const featuredArt = props.art.map((art, index) => {
         return (
-            <Link to="/artwork" key={index}>
-                <div className="home-card" >
+                <div className="home-card" key={index} >
                     <img src={art.image} alt="" className="art-image"/>
                     <div className="art-info">
                         <h1 className="art-title">{art.name}</h1>
                         <h2 className="art-artist">{art.artist}</h2>
                         <p className="art-medium">{art.medium}</p>
                     </div>
+                    <div className="buy-art">
+                        <p className="art-price">${art.price}</p>
+                        <button type="button" className="buy-art-button"></button>
+                    </div>
                 </div>
-            </Link>
         )
     })
 
@@ -24,7 +26,6 @@ export default function Home(props) {
             <main>
                 <div className="home-main">
                     <h1 className="main-title">Featured Paintings</h1>
-                    {/* <button type="button" className="main-art-button" ></button> */}
                 </div>
                 <div className="home-artwork">
                     {featuredArt}

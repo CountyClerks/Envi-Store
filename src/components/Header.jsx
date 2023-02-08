@@ -7,7 +7,7 @@ export default function Navbar() {
             <nav>
                 <ul>
                     <li>
-                        <Link to="/artwork">Artwork</Link>
+                        <Link to="/artists">Artists</Link>
                     </li>
                 </ul>
             </nav>

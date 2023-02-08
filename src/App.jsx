@@ -1,5 +1,4 @@
 import Home from "./components/Home";
-import Artwork from "./components/Artwork";
 import Artists from "./components/Artists";
 import Header from "./components/Header";
 import art from "./Art";
@@ -12,7 +11,6 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home art={art}/>} />
-        <Route path="/artwork" element={<Artwork art={art}/>} />
         <Route path="/artists" element={<Artists art={art}/>} />
       </Routes>
     </BrowserRouter>

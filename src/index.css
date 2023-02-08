@@ -47,6 +47,7 @@ footer {
   border-radius: 5px;
   background-color: white;
   border: none;
+  cursor: pointer;
 }
 
 ul {
@@ -82,17 +83,6 @@ a:visited {
   font-size: 38px;
 }
 
-.main-art-button { 
-  margin-top: 6px;
-  height: 32px;
-  width: 45px;
-  background-color: white;
-  background-image: url(arrow-right.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  border: none;
-}
-
 .home-artwork {
   display: flex;
   flex-direction: row;
@@ -107,7 +97,7 @@ a:visited {
   justify-content: center;
   margin-right: 50px;
   margin-left: 50px;
-  height: 343px;
+  height: 345px;
   width: 232px;
   box-sizing: border-box;
 }
@@ -120,10 +110,15 @@ a:visited {
 .home-card:hover {
   transition: transform .5s;
   z-index: 2;
-  transform: scale(1.7);
+  transform: scale(1.5);
   background: #FFFFFF;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
 }
+
+.home-card:hover > .buy-art {
+  display: flex;
+}
+
 
 .footer-title > h1 {
   font-family: Karla;
@@ -184,5 +179,26 @@ a:visited {
   font-style: italic;
   margin: 0;
   text-indent: 12px;
-  padding-bottom: 20px;
+}
+
+.buy-art {
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.art-price {
+  font-weight: bold;
+}
+
+.buy-art-button {
+  background-image: url(button-buy.png);
+  background-size: contain;
+  border: none;
+  width: 26px;
+  height: 26px;
+}
+
+.buy-art-button:hover {
+  cursor: pointer;
 }
