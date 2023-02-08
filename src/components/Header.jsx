@@ -9,9 +9,6 @@ export default function Navbar() {
                     <li>
                         <Link to="/artwork">Artwork</Link>
                     </li>
-                    <li>
-                        <Link to="/artists">Artists</Link>
-                    </li>
                 </ul>
             </nav>
             <button type="button" className="cart-button"></button>
