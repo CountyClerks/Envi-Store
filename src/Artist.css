@@ -1,0 +1,17 @@
+.artists-container {
+    width: 500px;
+    display: flex;
+    column-gap: 25px;
+}
+
+.artist-title {
+    margin: 0;
+}
+
+.artist-description {
+    margin: 0;
+}
+
+.artist {
+    background-color: #F4F4F2;
+}

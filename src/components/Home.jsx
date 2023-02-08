@@ -24,15 +24,13 @@ export default function Home(props) {
             <main>
                 <div className="home-main">
                     <h1 className="home-title">Featured Paintings</h1>
-                    <button type="button" className="main-art-button" ></button>
+                    {/* <button type="button" className="main-art-button" ></button> */}
                 </div>
                 <div className="home-artwork">
                     {featuredArt}
                 </div>
             </main>
-            <Link to="/artists">
-                <Footer art={art}/>
-            </Link>
+            <Footer art={art}/>
         </div>
     )
 }

@@ -1,6 +1,20 @@
+import '../Artist.css'
 
-export default function Artist() {
+export default function Artist(props) {
+
+    const filterArtist = props.art.filter((element, ind) => ind === props.art.findIndex( elem => elem.artist === element.artist))
+    const artists = filterArtist.map((art, index) => {
+        return (
+            <div className="artist" key={index}>
+                <h1 className="artist-title">{art.artist}</h1>
+                <p className="artist-desccription">{art.artistDescription}</p>
+            </div>
+        )
+    })
+
     return (
-        <div>Artists</div>
+        <div className="artists-container">
+            {artists}
+        </div>
     )
 }

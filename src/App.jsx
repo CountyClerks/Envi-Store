@@ -12,8 +12,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home art={art}/>} />
-        <Route path="/artwork" element={<Artwork />} />
-        <Route path="/artists" element={<Artists />} />
+        <Route path="/artwork" element={<Artwork art={art}/>} />
+        <Route path="/artists" element={<Artists art={art}/>} />
       </Routes>
     </BrowserRouter>
   )

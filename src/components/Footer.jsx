@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Footer(props) {
 
 
@@ -6,9 +7,12 @@ export default function Footer(props) {
 
     const artList = filterArtist.map((artist, index) => {
         return (
-            <div className="footer-card" key={index}>
-                <h1>{artist.artist}</h1>
-            </div>
+            <Link to="/artist" key={index}>
+                <div className="footer-card">
+                    <h1>{artist.artist}</h1>
+                </div>
+            </Link>
+
         )
     })
 
