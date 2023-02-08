@@ -7,14 +7,17 @@ export default function Artist(props) {
         return (
             <div className="artist" key={index}>
                 <h1 className="artist-title">{art.artist}</h1>
-                <p className="artist-desccription">{art.artistDescription}</p>
+                <p className="artist-description">{art.artistDescription}</p>
             </div>
         )
     })
 
     return (
-        <div className="artists-container">
-            {artists}
-        </div>
+        <main>
+            <h1 className="main-title">Featured Artists</h1>
+            <div className="artists-container">
+                {artists}
+            </div>
+        </main>
     )
 }
