@@ -11,7 +11,9 @@ export default function Navbar() {
                     </li>
                 </ul>
             </nav>
-            <button type="button" className="cart-button"></button>
+            <Link to="/cart">
+                <button type="button" className="cart-button"></button>
+            </Link>
         </header>
     )
 }
