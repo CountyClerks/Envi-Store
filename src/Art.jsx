@@ -7,7 +7,7 @@ const art = [
         year: 1920,
         price: 2500,
         medium: "Woodblock Print",
-        image: "./ducks-goyo.jpg"
+        image: "./images/ducks-goyo.jpg"
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const art = [
         year: 1936,
         price: 500,
         medium: "Watercolor - Grahpite On Paperboard",
-        image: "./ornamental-iron-sackerman.jpg"
+        image: "./images/ornamental-iron-sackerman.jpg"
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ const art = [
         year: 1920,
         price: 2500,
         medium: "Woodblock Print",
-        image: "./evening-moon-kobe-goyo.jpg"
+        image: "./images/evening-moon-kobe-goyo.jpg"
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ const art = [
         year: "1897-1898",
         price: 8000,
         medium: "Oil on Canvas",
-        image: "./nympheas-monet.jpg"
+        image: "./images/nympheas-monet.jpg"
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ const art = [
         year: "1893 - 1896",
         price: 50,
         medium: "Woodblock Print",
-        image: "./tree-peony-seitei.jpg"
+        image: "./images/tree-peony-seitei.jpg"
     }
 ]
 
