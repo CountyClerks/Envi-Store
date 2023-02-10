@@ -15,9 +15,9 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Home art={art} cartArtwork={cartArtwork}  setCartArtwork={setCartArtwork} setTotalPrice={setTotalPrice} totalPrice={totalPrice}/>} />
-        <Route path="/artists" element={<Artists art={art}/>} />
-        <Route path="/cart" element={<Cart cartArtwork={cartArtwork} totalPrice={totalPrice}/>} />
+        <Route path="/Envi-Store/" element={<Home art={art} cartArtwork={cartArtwork}  setCartArtwork={setCartArtwork} setTotalPrice={setTotalPrice} totalPrice={totalPrice}/>} />
+        <Route path="/Envi-Store/artists" element={<Artists art={art}/>} />
+        <Route path="/Envi-Store/cart" element={<Cart cartArtwork={cartArtwork} totalPrice={totalPrice}/>} />
       </Routes>
     </BrowserRouter>
   )
