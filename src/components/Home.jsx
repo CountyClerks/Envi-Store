@@ -26,7 +26,7 @@ export default function Home(props) {
     
     function handleClick(event) {
         const {name, value, id} = event.target
-        const currentArt = {name: name, value: value}
+        const currentArt = {name: name, value: value, id: id}
         props.setCartArtwork(cartArtwork => [...cartArtwork, currentArt])
         props.setTotalPrice(props.totalPrice + parseInt(event.target.value))
     }
