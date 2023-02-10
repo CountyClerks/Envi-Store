@@ -12,7 +12,6 @@ export default function Footer(props) {
                     <h1>{artist.artist}</h1>
                 </div>
             </Link>
-
         )
     })
 
