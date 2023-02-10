@@ -7,7 +7,7 @@ export default function Footer(props) {
 
     const artList = filterArtist.map((artist, index) => {
         return (
-            <Link to="/Evni-Store/artists" key={index}>
+            <Link to="/Envi-Store/artists" key={index}>
                 <div className="footer-card">
                     <h1>{artist.artist}</h1>
                 </div>

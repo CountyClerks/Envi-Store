@@ -42,7 +42,7 @@ footer {
 .cart-button {
   height: 26px;
   width: 26px;
-  background-image: url(./images/cart-medium.png);
+  background-image: url(../public/images/cart-medium.png);
   background-size: 100%;
   border-radius: 5px;
   background-color: white;
